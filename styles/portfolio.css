@@ -112,16 +112,20 @@ p {
   line-height: 27px;
   padding: 15px 18px;
 }
-.btn-branding-home {
-  text-align: center;
-  display: block;
-  margin-top: 30px;
-}
+
 .btn {
   font-weight: 400;
   text-decoration: none;
 }
-
+.home-btn {
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 18px;
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  padding: 0;
+}
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
@@ -168,4 +172,5 @@ p {
 
 .creative-image {
   border: 2px solid rgb(190, 190, 190);
+  margin-bottom: 40px;
 }
