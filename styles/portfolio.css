@@ -11,7 +11,7 @@
   --border-color: 1px solid rgb(230, 157, 157);
   --gradient: linear-gradient(
     to bottom,
-    #f4b3b3 0%,
+    #dda2a2 0%,
     #f8bab4 0%,
     #fbb2a9 21%,
     #e7a199 52%,
@@ -25,18 +25,20 @@
     #e8c8c5 21%,
     #d7c0bd 52%,
     #cfa0a9 78%,
-    #ca90a6 100%
+    #695c61 100%
   );
+
+  --basic-color: #e8e7e7;
 }
 body {
   font-family: var(--default-font-family);
-  background: #e8e7e7;
+  background: var(--gradient-basic);
 }
 .hero {
   background: var(--head-color);
   text-align: center;
   padding: 160px 20px;
-  background: var(--gradient-basic);
+  background: #e6d4d4;
 }
 .icons {
   margin: 20px auto 30px;
@@ -139,7 +141,7 @@ p {
     font-size: 44px;
   }
 
-  .about-section {
+  .content-container {
     text-align: center;
     padding: 0;
   }
@@ -148,26 +150,35 @@ p {
     margin-bottom: 50px;
   }
 }
-.container {
-  margin-top: 80px;
+.content-container {
+  padding: 60px 20px;
+  background: #dec9c9;
 }
-.about-section-content {
-  margin: 30px;
-}
-.about-section .hello {
+.content .hello {
   font-size: 36px;
   font-weight: bold;
   color: #272142;
   margin-bottom: 10px;
 }
-.about-section h1 {
+.content h1 {
   font-size: 64px;
   line-height: 80px;
 }
-.about-section h2 {
+.content h2 {
   font-size: 20px;
   font-family: var(--default-font-family);
   font-weight: bold;
+}
+.content h3 {
+  line-height: 1.2;
+  font-size: 24px;
+  font-family: var(--default-font-family);
+}
+.content {
+  margin: 30px;
+}
+.content p {
+  font-size: 14px;
 }
 
 .creative-image {
