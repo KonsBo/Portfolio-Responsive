@@ -52,6 +52,7 @@ body {
 .icon-right {
   font-size: large;
 }
+
 .icon-middle {
   font-size: xx-large;
 }
@@ -95,6 +96,7 @@ p {
   font-size: 36px;
   font-weight: bold;
   color: #272142;
+  margin: 0;
 }
 
 .btn-branding {
@@ -113,6 +115,7 @@ p {
 .btn-branding-outline {
   background: var(--branding-color);
   border: 1px solid var(--branding-color);
+  border-radius: 4px;
   font-size: 18px;
   line-height: 27px;
   padding: 15px 18px;
@@ -134,28 +137,7 @@ p {
 .project-description {
   padding: 120px 60px;
 }
-@media (max-width: 900px) {
-  h1 {
-    font-size: 44px;
-    line-height: 2;
-  }
-  .project-description {
-    padding: 0;
-    text-align: center;
-  }
-  h2 {
-    font-size: 44px;
-  }
 
-  .content-container {
-    text-align: center;
-    padding: 0;
-  }
-
-  .btn {
-    margin-bottom: 50px;
-  }
-}
 .content-container {
   padding: 160px 20px;
   /* background: #dec9c9; */
@@ -189,4 +171,80 @@ p {
 .creative-image {
   border: 2px solid rgb(190, 190, 190);
   margin-bottom: 40px;
+  margin-left: 40px;
+}
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+nav a:hover,
+nav li .active a {
+  color: var(--branding-color);
+}
+nav ul {
+  padding: 20px 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 44px;
+    line-height: 2;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  hero {
+    padding: 80px 20px;
+  }
+
+  .content {
+    text-align: center;
+    padding: 0;
+  }
+
+  .btn {
+    margin-bottom: 50px;
+  }
+  .creative-image {
+    display: block;
+    margin: 0 auto;
+  }
+  .icons {
+    margin-bottom: 0;
+    padding: 0;
+    box-shadow: rgb(32, 31, 28);
+    background: none;
+    border: none;
+    color: #4e5f6b;
+  }
+  .icons {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .icon-right {
+    font-size: small;
+  }
+
+  .icon-middle {
+    font-size: xx-large;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .icon-bottom {
+    font-size: small;
+    margin: 0;
+    padding: 0;
+  }
 }

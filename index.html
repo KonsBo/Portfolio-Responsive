@@ -37,12 +37,32 @@
     <title>Web Portfolio</title>
   </head>
   <body>
-    <div class="icons">
-      <span class="icon-right">﹆</span> <span class="icon-middle">﹆</span>
-      <span class="icon-left">﹆</span><span class="icon-bottom">﹆</span>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/">
+          <div class="icons d-flex d-md-block" title="Boua's Logo">
+            <span class="icon-right">﹆</span>
+            <span class="icon-middle">﹆</span>
+            <span class="icon-left">﹆</span><span class="icon-bottom">﹆</span>
+          </div>
+        </a>
+        <ul>
+          <li class="active">
+            <a href="/"> Home</a>
+          </li>
+          <li>
+            <a href="/about.html"> About</a>
+          </li>
+          <li>
+            <a href="/work.html"> Work</a>
+          </li>
+          <li>
+            <a href="/contact.html"> Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
     <div class="hero">
-      <!-- <p>Hi There, I'm</p> -->
       <h1>Boua Konstantina</h1>
       <h2 class="mb-5">Front-End Developer based in Greece</h2>
       <div>
@@ -125,14 +145,6 @@
               Contact me
             </a>
           </div>
-        </div>
-        <div>
-          <a
-            href="/about.html"
-            class="home-btn btn btn-branding"
-            title="About me"
-            >About me</a
-          >
         </div>
       </div>
     </div>
