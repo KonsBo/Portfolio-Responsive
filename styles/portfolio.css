@@ -62,16 +62,18 @@ body {
   font-size: small;
 }
 h1 {
-  font-weight: bold;
   font-size: 96px;
-  font-family: var(--heading-font-family);
+  line-height: 1.5;
+}
+h2 {
+  font-size: 64px;
 }
 
 .hero h2 {
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
-  font-family: var(--default-font-family);
+  font-family: var(--heading-font-family);
 }
 
 h1,
@@ -81,6 +83,8 @@ h4,
 h5,
 h6 {
   color: black;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
 }
 p {
   font-weight: normal;
@@ -91,7 +95,6 @@ p {
   font-size: 36px;
   font-weight: bold;
   color: #272142;
-  margin: 0;
 }
 
 .btn-branding {
@@ -128,6 +131,9 @@ p {
   width: 140px;
   padding: 0;
 }
+.project-description {
+  padding: 120px 60px;
+}
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
@@ -151,8 +157,8 @@ p {
   }
 }
 .content-container {
-  padding: 60px 20px;
-  background: #dec9c9;
+  padding: 160px 20px;
+  /* background: #dec9c9; */
 }
 .content .hello {
   font-size: 36px;
@@ -167,7 +173,6 @@ p {
 .content h2 {
   font-size: 20px;
   font-family: var(--default-font-family);
-  font-weight: bold;
 }
 .content h3 {
   line-height: 1.2;
