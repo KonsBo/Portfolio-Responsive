@@ -206,7 +206,7 @@ nav a {
   transition: all 100ms ease-in-out;
 }
 nav a:hover {
-  color: rgb(140, 122, 216);
+  color: rgb(104, 103, 106);
 }
 nav li.active a {
   color: rgb(254, 253, 254);
