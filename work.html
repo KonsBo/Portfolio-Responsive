@@ -38,10 +38,35 @@
     <title>Web Portfolio-My work</title>
   </head>
   <body>
-    <div class="icons mb-0">
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/">
+          <div class="icons d-flex d-md-block" title="Boua's Logo">
+            <span class="icon-right">﹆</span>
+            <span class="icon-middle">﹆</span>
+            <span class="icon-left">﹆</span><span class="icon-bottom">﹆</span>
+          </div>
+        </a>
+        <ul>
+          <li>
+            <a href="/" title="Homepage"> Home</a>
+          </li>
+          <li>
+            <a href="/about.html" title="About Boua"> About</a>
+          </li>
+          <li class="active">
+            <a href="/work.html" title=" Boua's Work"> Work</a>
+          </li>
+          <li>
+            <a href="/contact.html" title="Contact Boua"> Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- <div class="icons mb-0">
       <span class="icon-right">﹆</span> <span class="icon-middle">﹆</span>
       <span class="icon-left">﹆</span><span class="icon-bottom">﹆</span>
-    </div>
+    </div> -->
     <div class="content-container container">
       <div class="content">
         <h1 class="mb-5">Take a look on my current projects!</h1>
@@ -50,7 +75,7 @@
             <img
               src="images/creative-coding.png"
               class="img-fluid mb-3 rounded"
-              alt=""
+              alt="Screenshot of creative-coding Project"
               title="creative-coding"
             />
             <h3 class="text-center m-0">Creative-Coding Project</h3>
@@ -60,7 +85,7 @@
             <img
               src="images/yoga.png"
               class="img-fluid mb-3 rounded"
-              alt=""
+              alt="Screenshot of Yoga Project"
               title="Yoga-Project"
             />
             <h3 class="text-center m-0">Yoga Project</h3>
@@ -71,7 +96,7 @@
             <img
               src="images/world-clock.png"
               class="img-fluid mb-3 rounded"
-              alt=""
+              alt="Screenshot of World Clock App"
               title="World clock"
             />
             <h3 class="text-center m-0">World-clock Project</h3>
@@ -82,14 +107,51 @@
             <img
               src="images/weather-project.png"
               class="img-fluid mb-3 rounded"
-              alt=""
-              title="Weather Project"
+              alt="Screenshot of Weather App"
+              title="Weather App"
             />
             <h3 class="text-center m-0">Weather Project</h3>
             <p class="text-center text-muted">Build with CSS & HTML</p>
           </div>
         </div>
       </div>
+      <footer>
+        <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+          <div>
+            <h3>Work Inquiry</h3>
+            <p class="text-muted">Let's work together</p>
+          </div>
+          <div>
+            <a href class="btn btn-branding mt-3"> Contact me </a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <a
+            href="mailto:konsmpoua@gmail.com"
+            class="email-link"
+            target="_blank"
+          >
+            konsmpoua@gmail.com
+          </a>
+        </div>
+        <div class="social-links d-flex justify-content-center mb-4">
+          <a href="https://github.com/KonsBo" target="_blank">
+            <i class="fab fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instragram.com/konsmpoua" target="_blank">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.twitter.com/konsmpoua" target="_blank">
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+          </a>
+        </div>
+        <p class="text-center mt-7">
+          This project was coded by me and it is
+          <a href="https://github.com/KonsBo/Portfolio-Responsive"
+            >open sourced</a
+          >
+        </p>
+      </footer>
     </div>
   </body>
 </html>

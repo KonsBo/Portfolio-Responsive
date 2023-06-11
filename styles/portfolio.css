@@ -6,7 +6,13 @@
     #c696a4 100%
   );
   --head-color: #dededf;
-  --heads-color: rgb(173, 152, 163);
+  --heads-color: linear-gradient(
+    rgb(173, 152, 163),
+    #dda2a2 0%,
+    #d2b7b5 0%,
+    #dcc0bc 21%,
+    #c7a4a0 52%
+  );
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
   --border-color: 1px solid rgb(230, 157, 157);
@@ -36,19 +42,18 @@ body {
   background: var(--gradient-basic);
 }
 .hero {
-  background: var(--head-color);
+  background: var(--heads-color);
   text-align: center;
-  padding: 160px 20px;
-  background: #e6d4d4;
+  padding: 80px 20px;
 }
 .icons {
   margin: 20px auto 30px;
   text-align: center;
   width: 80px;
-  border: var(--border-color);
+  border: 1px solid #bab4b3;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-  background-image: linear-gradient(to right, #beb9b4 0%, #4e5f6b 100%);
-  color: #bc766e;
+  background: linear-gradient(to right, #beb9b4 0%, #a6cde8 100%);
+  color: rgb(245, 199, 199);
 }
 .icon-right {
   font-size: large;
@@ -76,6 +81,9 @@ h2 {
   font-size: 24px;
   line-height: 36px;
   font-family: var(--heading-font-family);
+}
+h3 {
+  font-size: 48px;
 }
 
 h1,
@@ -108,11 +116,18 @@ p {
   line-height: 27px;
   font-size: 18px;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    rgba(40, 40, 40, 0.15) 0px -36px 30px 0px inset,
+    rgba(35, 35, 35, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(39, 38, 38, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(29, 29, 29, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  transition: all 100ms ease-in-out;
 }
+.btn-branding:hover {
+  color: white;
+  background: var(--branding-color);
+}
+
 .btn-branding-outline {
   background: var(--branding-color);
   border: 1px solid var(--branding-color);
@@ -120,6 +135,10 @@ p {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 18px;
+  transition: all 100ms ease-in-out;
+}
+.btn-branding-outline:hover {
+  color: white;
 }
 
 .btn {
@@ -140,8 +159,7 @@ p {
 }
 
 .content-container {
-  padding: 160px 20px;
-  /* background: #dec9c9; */
+  padding: 70px 20px;
 }
 .content .hello {
   font-size: 36px;
@@ -163,10 +181,15 @@ p {
   font-family: var(--default-font-family);
 }
 .content {
-  margin: 30px;
+  margin: 10px;
 }
 .content p {
   font-size: 14px;
+}
+.content a {
+  text-decoration: none;
+  color: #330c73;
+  font-weight: bold;
 }
 
 .creative-image {
@@ -176,17 +199,20 @@ p {
   width: 400px;
   height: 400px;
 }
+
 nav a {
   text-decoration: none;
   color: #272142;
   transition: all 100ms ease-in-out;
 }
-nav a:hover,
-nav li .active a {
-  color: var(--branding-color);
+nav a:hover {
+  color: rgb(140, 122, 216);
+}
+nav li.active a {
+  color: rgb(254, 253, 254);
 }
 nav ul {
-  padding: 20px 0;
+  padding: 0;
   margin: 0;
 }
 nav li {
@@ -209,6 +235,10 @@ footer .contact-box p {
 footer .email-link {
   text-decoration: none;
   color: black;
+  font-size: 24px;
+}
+footer .email-link:hover {
+  color: white;
 }
 footer .social-links a {
   margin: 0 20px;
@@ -218,6 +248,14 @@ footer .social-links a {
   border-radius: 50%;
   font-size: 18px;
   transition: all 100ms ease-in-out;
+}
+footer .social-links a:hover {
+  color: white;
+  background: var(--branding-color);
+}
+footer p a {
+  text-decoration: none;
+  color: #dabfb5;
 }
 
 @media (max-width: 900px) {
@@ -232,11 +270,8 @@ footer .social-links a {
   h2 {
     font-size: 44px;
   }
-  h4 {
+  h3 {
     font-size: 26px;
-  }
-  hero {
-    padding: 80px 20px;
   }
 
   .content {
@@ -252,25 +287,25 @@ footer .social-links a {
     margin: 0 auto;
   }
   .icons {
-    margin-bottom: 0;
+    margin-top: 10px;
+    margin-left: 0;
     padding: 0;
-    box-shadow: rgb(32, 31, 28);
+    color: rgb(99, 45, 45);
     background: none;
     border: none;
-    color: #4e5f6b;
+    transition: all 100ms ease-in-out;
   }
-  .icons {
-    margin-bottom: 0;
-    padding: 0;
+  .icons:hover {
+    color: white;
+    background: none;
   }
+
   .icon-right {
     font-size: small;
   }
 
   .icon-middle {
     font-size: xx-large;
-    margin-top: 0;
-    padding: 0;
   }
 
   .icon-bottom {

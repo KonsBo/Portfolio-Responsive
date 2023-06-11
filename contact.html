@@ -38,15 +38,40 @@
     <title>Web Portfolio-Contact Me</title>
   </head>
   <body>
-    <div class="icons mb-0">
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/">
+          <div class="icons d-flex d-md-block" title="Boua's Logo">
+            <span class="icon-right">﹆</span>
+            <span class="icon-middle">﹆</span>
+            <span class="icon-left">﹆</span><span class="icon-bottom">﹆</span>
+          </div>
+        </a>
+        <ul>
+          <li>
+            <a href="/" title="Homepage"> Home</a>
+          </li>
+          <li>
+            <a href="/about.html" title="About Boua"> About</a>
+          </li>
+          <li>
+            <a href="/work.html" title=" Boua's Work"> Work</a>
+          </li>
+          <li class="active">
+            <a href="/contact.html" title="Contact Boua"> Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- <div class="icons mb-0">
       <span class="icon-right icons">﹆</span>
       <span class="icon-middle icons">﹆</span>
       <span class="icon-left icons">﹆</span
       ><span class="icon-bottom icons">﹆</span>
-    </div>
+    </div> -->
     <div class="content-container container">
-      <div class="content">
-        <h1 class="mb-5">Get in touch with me!</h1>
+      <div class="content text-center">
+        <h1 class="mb-5">Get in touch</h1>
         <h3>Email</h3>
         <p>
           <a href="mailto:konsmpoua@gmail.com" target="_blank" t
@@ -66,6 +91,43 @@
           >
         </p>
       </div>
+      <footer>
+        <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+          <div>
+            <h3>Work Inquiry</h3>
+            <p class="text-muted">Let's work together</p>
+          </div>
+          <div>
+            <a href class="btn btn-branding mt-3"> Contact me </a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <a
+            href="mailto:konsmpoua@gmail.com"
+            class="email-link"
+            target="_blank"
+          >
+            konsmpoua@gmail.com
+          </a>
+        </div>
+        <div class="social-links d-flex justify-content-center mb-4">
+          <a href="https://github.com/KonsBo" target="_blank">
+            <i class="fab fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instragram.com/konsmpoua" target="_blank">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.twitter.com/konsmpoua" target="_blank">
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+          </a>
+        </div>
+        <p class="text-center mt-7">
+          This project was coded by me and it is
+          <a href="https://github.com/KonsBo/Portfolio-Responsive"
+            >open sourced</a
+          >
+        </p>
+      </footer>
     </div>
   </body>
 </html>
