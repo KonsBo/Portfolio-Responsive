@@ -314,3 +314,15 @@ footer p a {
     padding: 0;
   }
 }
+.headshot {
+  width: 320px;
+  display: block;
+  margin: 40px auto;
+}
+
+.projects {
+  font-size: large;
+  font-weight: bold;
+  color: #32414d;
+  opacity: 0.6;
+}
