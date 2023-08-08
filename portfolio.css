@@ -1,0 +1,373 @@
+:root {
+  --branding-color: linear-gradient(
+    -225deg,
+    #e1d7be 0%,
+    #d9b6b3 48%,
+    #c696a4 100%
+  );
+  --head-color: #dededf;
+  --heads-color: linear-gradient(
+    rgb(173, 152, 163),
+    #dda2a2 0%,
+    #d2b7b5 0%,
+    #dcc0bc 21%,
+    #c7a4a0 52%
+  );
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+  --border-color: 1px solid rgb(230, 157, 157);
+  --gradient: linear-gradient(
+    to bottom,
+    #dda2a2 0%,
+    #f8bab4 0%,
+    #fbb2a9 21%,
+    #e7a199 52%,
+    #c97d8b 78%,
+    #994b68 100%
+  );
+  --gradient-basic: linear-gradient(
+    to bottom,
+    #d5b8b7 0%,
+    #d8bfbd 0%,
+    #e8c8c5 21%,
+    #d7c0bd 52%,
+    #cfa0a9 78%,
+    #695c61 100%
+  );
+
+  --basic-color: #e8e7e7;
+}
+body {
+  font-family: var(--default-font-family);
+  background: var(--gradient-basic);
+}
+.hero {
+  background: var(--heads-color);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.icons {
+  margin: 20px auto 30px;
+  text-align: center;
+  width: 80px;
+  border: 1px solid #bab4b3;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  background: linear-gradient(to right, #beb9b4 0%, #a6cde8 100%);
+  color: rgb(245, 199, 199);
+}
+.icon-right {
+  font-size: large;
+}
+
+.icon-middle {
+  font-size: xx-large;
+}
+.icon-left {
+  font-size: small;
+}
+.icon-bottom {
+  font-size: small;
+}
+
+h1 {
+  font-size: 96px;
+  line-height: 1.5;
+}
+h2 {
+  font-size: 64px;
+}
+
+.hero h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: var(--heading-font-family);
+}
+h3 {
+  font-size: 48px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  color: #272142;
+  margin: 0;
+}
+
+.btn-branding {
+  background-image: linear-gradient(to right, #ada9a5 0%, #304352 100%);
+  color: #c7aca9;
+  border-radius: 4px;
+  padding: 15px 30px;
+  line-height: 27px;
+  font-size: 18px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(40, 40, 40, 0.15) 0px -36px 30px 0px inset,
+    rgba(35, 35, 35, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(39, 38, 38, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(29, 29, 29, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  transition: all 100ms ease-in-out;
+}
+.btn-branding:hover {
+  color: white;
+  background: var(--branding-color);
+}
+
+.btn-branding-outline {
+  background: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 18px;
+  transition: all 100ms ease-in-out;
+}
+.btn-branding-outline:hover {
+  color: white;
+}
+
+.btn {
+  font-weight: 400;
+  text-decoration: none;
+}
+.home-btn {
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 18px;
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  padding: 0;
+}
+.project-description {
+  padding: 120px 60px;
+}
+
+.dictionary {
+  margin-top: 0;
+  padding: 0 10px;
+}
+.img-dictionary {
+  margin: 100px auto;
+}
+
+.clock {
+  padding: 0;
+}
+
+.content-container {
+  padding: 70px 20px;
+}
+.content .hello {
+  font-size: 36px;
+  font-weight: bold;
+  color: #272142;
+  margin-bottom: 10px;
+}
+.content h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+.content h2 {
+  font-size: 20px;
+  font-family: var(--default-font-family);
+}
+.content h3 {
+  line-height: 1.2;
+  font-size: 24px;
+  font-family: var(--default-font-family);
+}
+.content {
+  margin: 10px;
+}
+.content p {
+  font-size: 14px;
+}
+.content a {
+  text-decoration: none;
+  color: #330c73;
+  font-weight: bold;
+}
+
+.creative-image {
+  border: 2px solid rgb(42, 41, 41);
+  margin-bottom: 40px;
+  margin-left: 40px;
+  width: 400px;
+  height: 400px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+nav a:hover {
+  color: rgb(104, 103, 106);
+}
+nav li.active a {
+  color: rgb(254, 253, 254);
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+footer {
+  margin: 60px 0;
+}
+footer .logoFooter {
+  padding-top: 20px;
+}
+footer .contact-box {
+  background: var(--heads-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+footer .contact-box p {
+  margin: 0;
+}
+footer .contact-box a {
+  text-decoration: none;
+}
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+footer .email-link:hover {
+  color: white;
+}
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background: var(--heads-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+footer .social-links a:hover {
+  color: white;
+  background: var(--branding-color);
+}
+
+footer p a {
+  text-decoration: none;
+  padding-left: 3px;
+  color: #eae4e1;
+}
+footer .iconsLast {
+  margin: 40px auto 30px;
+  text-align: center;
+  width: 80px;
+  border: 1px solid #bab4b3;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  background: linear-gradient(to right, #beb9b4 0%, #a6cde8 100%);
+  color: rgb(245, 199, 199);
+}
+.icon-right .iconsLast {
+  font-size: large;
+}
+
+.icon-middle .iconsLast {
+  font-size: xx-large;
+}
+.icon-left .iconsLast {
+  font-size: small;
+}
+.icon-bottom .iconsLast {
+  font-size: small;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 44px;
+    line-height: 2;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+
+  .content {
+    text-align: center;
+    padding: 0;
+  }
+
+  .btn {
+    margin-bottom: 50px;
+  }
+  .creative-image {
+    display: block;
+    margin: 0 auto;
+  }
+  .icons {
+    margin-top: 10px;
+    margin-left: 0;
+    padding: 0;
+    color: rgb(99, 45, 45);
+    background: none;
+    border: none;
+    transition: all 100ms ease-in-out;
+  }
+  .icons:hover {
+    color: white;
+    background: none;
+  }
+
+  .icon-right {
+    font-size: small;
+  }
+
+  .icon-middle {
+    font-size: xx-large;
+  }
+
+  .icon-bottom {
+    font-size: small;
+    margin: 0;
+    padding: 0;
+  }
+}
+.headshot {
+  width: 320px;
+  display: block;
+  margin: 40px auto;
+}
+
+.projects {
+  font-size: large;
+  font-weight: bold;
+  color: #32414d;
+  opacity: 0.6;
+}
