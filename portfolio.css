@@ -46,6 +46,7 @@ body {
   text-align: center;
   padding: 80px 20px;
 }
+
 .icons {
   margin: 20px auto 30px;
   text-align: center;
@@ -68,6 +69,7 @@ body {
 .icon-bottom {
   font-size: small;
 }
+
 h1 {
   font-size: 96px;
   line-height: 1.5;
@@ -158,6 +160,18 @@ p {
   padding: 120px 60px;
 }
 
+.dictionary {
+  margin-top: 0;
+  padding: 0 10px;
+}
+.img-dictionary {
+  margin: 100px auto;
+}
+
+.clock {
+  padding: 0;
+}
+
 .content-container {
   padding: 70px 20px;
 }
@@ -224,6 +238,9 @@ nav li {
 footer {
   margin: 60px 0;
 }
+footer .logoFooter {
+  padding-top: 20px;
+}
 footer .contact-box {
   background: var(--heads-color);
   padding: 30px 120px;
@@ -231,6 +248,9 @@ footer .contact-box {
 }
 footer .contact-box p {
   margin: 0;
+}
+footer .contact-box a {
+  text-decoration: none;
 }
 footer .email-link {
   text-decoration: none;
@@ -253,9 +273,34 @@ footer .social-links a:hover {
   color: white;
   background: var(--branding-color);
 }
+
 footer p a {
   text-decoration: none;
-  color: #dabfb5;
+  padding-left: 3px;
+  color: #eae4e1;
+}
+footer .iconsLast {
+  margin: 40px auto 30px;
+  text-align: center;
+  width: 80px;
+  border: 1px solid #bab4b3;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  background: linear-gradient(to right, #beb9b4 0%, #a6cde8 100%);
+  color: rgb(245, 199, 199);
+}
+.icon-right .iconsLast {
+  font-size: large;
+}
+
+.icon-middle .iconsLast {
+  font-size: xx-large;
+}
+.icon-left .iconsLast {
+  font-size: small;
+}
+.icon-bottom .iconsLast {
+  font-size: small;
 }
 
 @media (max-width: 900px) {
